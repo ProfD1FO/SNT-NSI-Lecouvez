@@ -118,6 +118,9 @@ Les programmes sont avant tout là pour effectuer des calculs, il est donc néce
 !!! tip "À retenir"
     Pour la division il y a donc trois opérateurs, un pour division classique avec `/`, un pour le quotient de la division avec `//` et un pour le reste avec `%`. En fonction des situations, il vous faudra régulièrement utiliser les trois.
 
+!!! question "Question"
+    En Python, combien vaut `2+33//3` ?
+
 ## Print et input:
 
 `print` et `input` sont des *fonctions* intégrées directement dans Python comme beaucoup d'autres. Nous verrons les fonctions et leur fonctionnement bientôt. Cependant ces deux fonctions ont un intérêt particulier assez simple : `input` permet de demander une valeur à l'utilisateur une valeur que vous pourrez stocker dans une variable. `print` permet quant à lui d'afficher le contenu d'une variable, ou une valeur quelconque d'un type de base vu plus haut.
@@ -131,7 +134,7 @@ Les programmes sont avant tout là pour effectuer des calculs, il est donc néce
     ```
 
 !!! warning
-    En Python, la fonction `input()` convertir automatiquement la valeur entrée en *chaîne de caractères* (voir plus haut), certaines opérations comme la puissance n'ont donc aucun sens pour des valeurs de ce type. Si la valeur demandée est bien un entier, il faudra donc la *convertir* en utilisant la fonction `int()`. Par exemple :
+    En Python, la fonction `input()` convertit automatiquement la valeur entrée en *chaîne de caractères* (voir plus haut), certaines opérations comme la puissance n'ont donc aucun sens pour des valeurs de ce type. Si la valeur demandée est bien un entier, il faudra donc la *convertir* en utilisant la fonction `int()`. Par exemple :
     ```python
     nbr=input("Entrez un nombre")
     nbr=int(nbr) #Convertit la chaîne de caractères dans la variable nbr en entier

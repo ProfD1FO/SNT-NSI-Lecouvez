@@ -15,6 +15,7 @@ Dans ce premier chapitre, nous découvrons les premières constructions élémen
 
 ### Cours
 
+- [Cours 0 — Découvrir Thonny](0-interface_thonny.md)
 - [Cours 1 — Constructions élémentaires](1-constructions_elementaires.md)
 
 ## Travaux pratiques
