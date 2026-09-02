@@ -1,4 +1,4 @@
-## Exercices – Constructions élémentaires
+# Exercices – Constructions élémentaires
 
 ## Exercices écrits
 
