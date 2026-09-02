@@ -135,7 +135,7 @@ Les programmes sont avant tout là pour effectuer des calculs, il est donc néce
     
 ## Print et input:
 
-`print` et `input` sont des *fonctions* intégrées directement dans Python comme beaucoup d'autres. Nous verrons les fonctions et leur fonctionnement bientôt. Cependant ces deux fonctions ont un intérêt particulier assez simple : `input` permet de demander une valeur à l'utilisateur une valeur que vous pourrez stocker dans une variable. `print` permet quant à lui d'afficher le contenu d'une variable, ou une valeur quelconque d'un type de base vu plus haut.
+`print` et `input` sont des *fonctions* intégrées directement dans Python comme beaucoup d'autres. Nous verrons les fonctions et leur fonctionnement bientôt. Cependant ces deux fonctions ont un intérêt particulier assez simple : `input` permet de demander à l'utilisateur une valeur que vous pourrez stocker dans une variable. `print` permet quant à lui d'afficher le contenu d'une variable, ou une valeur quelconque d'un type de base vu plus haut.
 
 !!! example "À tester"
     Recopiez et exécutez le programme suivant puis entrez un nombre, que se passe t-il?

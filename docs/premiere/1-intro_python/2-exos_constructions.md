@@ -198,7 +198,7 @@ b = 7
 
 #### Défi 2 - Le super convertisseur
 
-Reprenons le convertisseur de l'exercice 6 et améliorons le.
+Reprenons le convertisseur de l'exercice 8 et améliorons le.
 Il demandera maintenant une valeur en seconde et l'affichera en heures, minutes et secondes
 
 ```
