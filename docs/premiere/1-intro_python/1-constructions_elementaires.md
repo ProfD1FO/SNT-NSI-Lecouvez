@@ -45,7 +45,7 @@ L'affectation est une opération essentielle dans tous les langages de programma
     En programmation, `=` ne signifie pas juste « est égal à ».
 
     L'instruction
-
+    
     ```python
     annee = annee + 2
     ```
@@ -61,6 +61,7 @@ En Python, il existe plusieurs types de base :
 ### Les entiers (int)
 
 En python le type entier ou (int) correspond aux nombres entiers. Par exemple:
+
 ```python
 age = 25
 annee = 2026
@@ -103,17 +104,17 @@ Elles correspondent respectivement à Vrai et Faux. C'est un type très utile, e
 
 ## Expressions arithmétiques
 
-Les programmes sont avant tout là pour effectuer des calculs, il est donc nécessaire de pouvoir utiliser les opérations de base en python. Vous connaissez déjà la majorité d'entre elles donc résumons-les dans le tableau suivant:
+Les programmes sont avant tout là pour effectuer des calculs, il est donc nécessaire de pouvoir utiliser les opérations de base en python avec le type entier. Vous connaissez déjà la majorité d'entre elles donc résumons-les dans le tableau suivant:
 
-| Opérateur | Opération                    | Exemple  |   Résultat |
-| --------- | ---------------------------- | -------- | ---------: |
-| `+`       | Addition                     | `7 + 3`  |       `10` |
-| `-`       | Soustraction                 | `7 - 3`  |        `4` |
-| `*`       | Multiplication               | `7 * 3`  |       `21` |
-| `**`      | Puissance                    | `7 ** 3` |      `343` |
+| Opérateur | Opération                    | Exemple  | Résultat   |
+| --------- | ---------------------------- | -------- | ----------:|
+| `+`       | Addition                     | `7 + 3`  | `10`       |
+| `-`       | Soustraction                 | `7 - 3`  | `4`        |
+| `*`       | Multiplication               | `7 * 3`  | `21`       |
+| `**`      | Puissance                    | `7 ** 3` | `343`      |
 | `/`       | Division                     | `7 / 3`  | `2.333...` |
-| `//`      | Division entière             | `7 // 3` |        `2` |
-| `%`       | Reste de la division entière | `7 % 3`  |        `1` |
+| `//`      | Division entière             | `7 // 3` | `2`        |
+| `%`       | Reste de la division entière | `7 % 3`  | `1`        |
 
 !!! tip "À retenir"
     Pour la division il y a donc trois opérateurs, un pour division classique avec `/`, un pour le quotient de la division avec `//` et un pour le reste avec `%`. En fonction des situations, il vous faudra régulièrement utiliser les trois.
@@ -121,6 +122,17 @@ Les programmes sont avant tout là pour effectuer des calculs, il est donc néce
 !!! question "Question"
     En Python, combien vaut `2+33//3` ?
 
+!!! example "À tester"
+    Cela semble logique mais les opérations "arithmétiques" ne sont valides que pour le type entier. Faire la puissance d'une chaîne de caractères n'aurait aucun sens. Cependant il existe certaines exceptions, par exemple il est possible d'additionner des chaînes de caractères entre elles-mêmes ou encore de multiplier une chaîne par un nombre. Pour vérifier testez :
+    
+    ```python
+    print("Bonjour"*5)
+    ```
+	
+    ```python
+    print("Bonjour" + ", ça va?")
+    ```
+    
 ## Print et input:
 
 `print` et `input` sont des *fonctions* intégrées directement dans Python comme beaucoup d'autres. Nous verrons les fonctions et leur fonctionnement bientôt. Cependant ces deux fonctions ont un intérêt particulier assez simple : `input` permet de demander une valeur à l'utilisateur une valeur que vous pourrez stocker dans une variable. `print` permet quant à lui d'afficher le contenu d'une variable, ou une valeur quelconque d'un type de base vu plus haut.

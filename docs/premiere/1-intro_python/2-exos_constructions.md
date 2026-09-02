@@ -2,7 +2,7 @@
 
 ## Exercices écrits
 
-### Exercice 1 — Affectations
+### Exercice 1 — Affectations et séquences
 
 Sans exécuter le programme, indiquer la valeur de chaque variable à la fin.
 
@@ -41,6 +41,11 @@ Donner le type de chacune des valeurs suivantes :
 True
 "Bonjour"
 -5
+"True"
+"'bonsoir'"
+7 + 3.12
+4 / 2
+" 2.4 "
 ```
 
 **Question :** quelle est la différence entre `17` et `"17"` ?
@@ -78,11 +83,36 @@ c = 20 - 8 // 2
 
 Vérifier vos réponses avec Python.
 
+
+
+### Exercice 5 — Une erreur ?
+
+Expliquer l'erreur de l'instruction suivante :
+
+```python
+>>> "3" + 2
+    Traceback (most recent call last):    File "<stdin>", line 1, in <module>
+    TypeError: unsupported operand type(s) for +: 'str' and 'int'
+```
+
+---
+
+### Exercice 6 — print et input
+
+Sans tester avec python, devinez ce que va renvoyer le programme suivant si le nombre entré par l'utilisateur est 32 ?
+
+```python
+nombre = input("Choisissez un nombre")
+print(nombre*4)
+```
+
+Que rajouter dans le programme pour qu'il multiplie réelement par 4 le nombre de départ? Testez le maintenant sur Python.
+
 ---
 
 ## Exercices de programmation
 
-### Exercice 5 — Calcul d'un prix
+### Exercice 7 — Calcul d'un prix
 
 Écrire un programme qui :
 
@@ -104,7 +134,7 @@ Total : 10.0
 
 ---
 
-### Exercice 6 — Convertir une durée
+### Exercice 8 — Convertir une durée
 
 Écrire un programme qui demande une durée en minutes et affiche sa correspondance en heures et minutes.
 
@@ -116,3 +146,74 @@ Durée en minutes : 137
 ```
 
 **Indication :** utiliser les opérateurs `//` et `%`.
+
+### Défis de programmation :
+
+#### Défi 1 — Échanger deux variables
+
+On suppose deux variables `a` et `b` contenant des valeurs quelconques :
+
+```python
+a = 12
+b = 35
+```
+
+Le but est **d'échanger les valeurs contenues dans ces deux variables**.
+
+À la fin du programme, on veut obtenir :
+
+```python
+a = 35
+b = 12
+```
+
+⚠️ **Attention :** vous ne devez pas simplement réaffecter directement les valeurs de `a` et `b`.
+
+Votre programme doit fonctionner **quelle que soit la valeur initiale de `a` et `b`**.
+
+Par exemple, si on remplace :
+
+```python
+a = 12
+b = 35
+```
+
+par :
+
+```python
+a = 7
+b = 42
+```
+
+le même programme doit automatiquement donner :
+
+```python
+a = 42
+b = 7
+```
+
+**Vous ne devez donc pas modifier votre programme lorsque les valeurs initiales changent.**
+
+**Objectif :** trouver une méthode permettant de conserver les valeurs initiales tout en les échangeant.
+
+#### Défi 2 - Le super convertisseur
+
+Reprenons le convertisseur de l'exercice 6 et améliorons le.
+Il demandera maintenant une valeur en seconde et l'affichera en heures, minutes et secondes
+
+```
+Nombre de secondes : 4523
+Conversion : 1 h 15 min 23 s
+```
+
+**Objectif :** Ecrire un programme qui convertit une durée en secondes en heure, minutes et secondes
+
+#### Défi 3 - Les taxes
+
+**Objectif :** Ecrire un programme qui demande un prix hors taxe et un taux de TVA puis qui calcule
+
+```
+Prix HT : 20
+TVA (%) : 20
+Prix TTC : 24
+```
