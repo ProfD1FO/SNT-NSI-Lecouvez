@@ -66,6 +66,10 @@ On peut résumer les différents opérateurs de comparaisons dans le tableau sui
     True
     ```
 
+!!! tip "Pause — À vous de jouer"
+    **Faites les exercices 1 et 2 de la fiche d'exercices 2.**
+
+
 ### Combinaisons d'expressions
 
 Lorsqu'une situation est soumise à plusieurs contraintes, il est nécessaire de pouvoir combiner des expressions booléennes afin de les prendre en compte.
@@ -99,17 +103,6 @@ Python possède trois principaux opérateurs permettant de combiner ou de modifi
 | `or`      | OU : au moins une des expressions doit être vraie |
 | `not`     | NON : inverse la valeur de l'expression           |
 
-!!! example "À tester"
-    Testez les expressions suivantes dans la console :
-
-    ```python
-    >>> True and True
-    >>> True and False
-    >>> True or False
-    >>> False or False
-    >>> not True
-    >>> not False
-    ```
 
 !!! tip "À retenir"
 - `A and B` est vrai uniquement si `A` **et** `B` sont vrais.
@@ -128,8 +121,8 @@ Python possède trois principaux opérateurs permettant de combiner ou de modifi
     c = not (age >= 18)
     ```
 
-
----
+!!! tip "Pause — À vous de jouer"
+    **Faites les exercices 3 et 4.**
 
 ## Partie 2 : Les instructions conditionnelles
 
@@ -208,6 +201,11 @@ else:
         # exécuté si la condition est fausse
     ```
 
+
+!!! tip "Pause — À vous de jouer"
+    **Faites les exercices 5 et 6.**
+
+Une fois les exercices terminés, vous pourrez débuter le TP 1 (à venir)
 
 
  
