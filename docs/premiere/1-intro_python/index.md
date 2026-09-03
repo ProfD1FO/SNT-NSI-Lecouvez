@@ -22,7 +22,7 @@ Dans ce premier chapitre, nous découvrons les premières constructions élémen
 ## Exercices
 
 - [Exercices 1 — Constructions](2-exos_constructions.md)
-- [Exercices 2 — Booléens(4-exos_conditions.md)
+- [Exercices 2 — Booléens](4-exos_conditions.md)
 
 
 ## Travaux pratiques

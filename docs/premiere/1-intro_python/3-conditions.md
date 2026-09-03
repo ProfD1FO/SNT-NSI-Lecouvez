@@ -105,9 +105,9 @@ Python possède trois principaux opérateurs permettant de combiner ou de modifi
 
 
 !!! tip "À retenir"
-- `A and B` est vrai uniquement si `A` **et** `B` sont vrais.
-- `A or B` est vrai si `A` **ou** `B` est vrai.
-- `not A` inverse la valeur de `A`.
+    - `A and B` est vrai uniquement si `A` **et** `B` sont vrais.
+    - `A or B` est vrai si `A` **ou** `B` est vrai.
+    - `not A` inverse la valeur de `A`.
 
 !!! example "À tester"
 

@@ -81,22 +81,23 @@ Indiquez si les expressions suivantes valent `True` ou `False`.
 Sans exécuter le programme, indiquez ce qui sera affiché.
 
 ```python
-age = 20
+age = 12
 
 if age >= 18:
     print("Majeur")
+print("Fin du programme")
 ```
 
 Puis faites de même avec :
 
 ```python
-age = 15
+age = 33
 
 if age >= 18:
     print("Majeur")
-```
+print("Fin du programme")
 
-**Question :** que se passe-t-il lorsque la condition est fausse ?
+```
 
 ---
 
