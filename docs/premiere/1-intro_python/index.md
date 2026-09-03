@@ -17,15 +17,18 @@ Dans ce premier chapitre, nous découvrons les premières constructions élémen
 
 - [Cours 0 — Découvrir Thonny](0-interface_thonny.md)
 - [Cours 1 — Constructions élémentaires](1-constructions_elementaires.md)
+- [Cours 2 — Expressions booléennes et conditions](3-conditions.md)
+
+## Exercices
+
+- [Exercices 1 — Constructions](2-exos_constructions.md)
+- [Exercices 2 — Booléens(4-exos_conditions.md)
+
 
 ## Travaux pratiques
 
-- [TP 1 — Premiers programmes](3-tp_constructions.md)
+- [TP 1 — Premiers programmes](5-tp_constructions.md)
 
-
-## Exercices distribués
-
-- [Exercices 1 — Constructions](2-exos_constructions.md)
 
 ## Corrections
 
