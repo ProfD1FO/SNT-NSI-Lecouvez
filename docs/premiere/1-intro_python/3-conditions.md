@@ -161,8 +161,11 @@ La `condition` est une expression booléenne. Les instructions indentées (déca
     ```python
     if age >= 18:
         print("Vous êtes majeur")
-
-    Ici, `print()` appartient au bloc du `if`. Cela veut dire qu'il ne s'exécutera que si la condition est vraie.
+		print("Bravo !")
+	print("fin du programme")
+	```
+	
+    Ici, certains `print()` appartient au bloc du `if` et d'autres non. Les premiers ne s'exécuteront que si la condition est vraie mais le dernier s'exécutera à chaque fois.
 
 ### `if` et `else`
 
@@ -183,7 +186,7 @@ else:
     ```python
     age = int(input("Quel âge avez-vous ? "))
 
-    if age >= 18:
+    if age ....  .... :
         print("Vous êtes majeur")
     else:
         print("Vous êtes mineur")
