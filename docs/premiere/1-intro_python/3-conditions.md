@@ -27,7 +27,7 @@ En Python, il est possible de comparer des valeurs de différents types (int, st
     Dans l'éditeur de code, écrivez :
     ```python
     annee = 2026
-    age >= 2025
+    print(annee >= 2025)
     ```
     Quel est le résultat de cette expression?
 
@@ -194,7 +194,7 @@ else:
 
     Testez le programme avec plusieurs âges.
 
-    !!! tip "À retenir"
+!!! tip "À retenir"
     Une instruction conditionnelle permet à un programme de **choisir quelles instructions exécuter** en fonction du résultat d'une expression booléenne.
 
     ```python
