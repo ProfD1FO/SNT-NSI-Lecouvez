@@ -1,4 +1,4 @@
-# Les boucles
+# Cours 3 : Les boucles
 
 Avec ce qui a été vu précédemment, nous sommes déjà capables de construire des petits programmes intéressants. Cependant, nous rencontrons rapidement une limite : lorsque nous voulons effectuer plusieurs fois la même opération, nous devons pour l'instant répéter nous-mêmes les instructions dans le programme.
 
@@ -113,6 +113,9 @@ for <variable> in <itérable>:
 * `in` indique que l'on parcourt l'itérable ;
 * `<itérable>` contient les valeurs qui vont être parcourues ;
 * le bloc indenté est exécuté **une fois pour chaque valeur de l'itérable**.
+
+!!! warning "Attention"
+	Le bloc d'instructions à répéter est **toujours** écarté de 4 espaces comme pour les conditions. On appelle ça une **indentation**.
 
 Le nom de la variable de boucle est choisi par le programmeur, on choisit souvent i car cela signifie "indice" mais ce n'est pas obligatoire. Par exemple, ces deux programmes fonctionnent de la même manière :
 

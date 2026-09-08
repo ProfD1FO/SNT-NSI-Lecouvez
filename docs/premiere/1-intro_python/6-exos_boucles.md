@@ -29,7 +29,7 @@ Vous pouvez ensuite tester dans la console en faisant `print(list(range(2, 7))` 
 
 Sans utiliser Python, prédire les valeurs de `a` et `b` à la **fin** des programmes suivants, prenez le temps de bien écrire l'évolution des variables sur votre feuille pour ne pas perdre le fil :
 
-1. Premier programme
+- Premier programme
 
 ```python
 a = 0
@@ -37,7 +37,7 @@ for i in range(0,10) :
     a = a + 2
 ```
 
-2. Deuxième programme
+- Deuxième programme
 
 ```python
 a = 0
@@ -45,7 +45,7 @@ for i in range(0,10) :
     a = a + i
 ```
 
-3. Troisième programme
+- Troisième programme
 
 ```python
 a = 0
@@ -57,38 +57,38 @@ for i in range(5) :
 
 ### Exercice 4 : Ecrire des boucles simples
 
-1. Ecrivez une boucle qui **affiche** tous les nombres entre 1 et 100.
+- Ecrivez une boucle qui **affiche** tous les nombres entre 1 et 100.
 
-Exemple :
+	Exemple :
 
-```text
-1
-2
-3
-4
-...
-```
+	```text
+	1
+	2
+	3
+	4
+	...
+	```
 
-2. Ecrivez une boucle qui affiche les résultats de la table de 9  de 0 × 9 jusque 10 × 9 . 
+- Ecrivez une boucle qui affiche les résultats de la table de 9  de 0 × 9 jusque 10 × 9 . 
 
-Exemple :
+	Exemple :
 
-```text
-0
-9
-18
-27
-...
-```
+	```text
+	0
+	9
+	18
+	27
+	...
+	```
 
-3. Écrivez une boucle qui affiche les carrés des nombres de 1 à 10 .
+- Écrivez une boucle qui affiche les carrés des nombres de 1 à 10 .
 
-Exemple :
+	Exemple :
 
-```text
-1
-4
-9
-16
-...
-```
+	```text
+	1
+	4
+	9
+	16
+	...
+	```
