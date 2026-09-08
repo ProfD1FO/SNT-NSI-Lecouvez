@@ -156,4 +156,4 @@ La variable de boucle est importante car elle permet d'utiliser **la valeur du t
 	- utiliser la variable de boucle pour accéder à la valeur du tour actuel.
 
 !!! tip "Pause — À vous de jouer"
-Faites les exercices 3 et 4 de la fiche associée.
+	Faites les exercices 3 et 4 de la fiche associée.
