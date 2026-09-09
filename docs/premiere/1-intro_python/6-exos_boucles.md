@@ -25,6 +25,8 @@ Vous pouvez ensuite tester dans la console en faisant `print(list(range(2, 7))` 
 4. `[12, 11, 10, 9, 8]`
 5. `[10, 8, 6, 4, 2, 0]`
 
+## Partie 2 : le for
+
 ### Exercice 3 : Prédire le comportement d'une boucle
 
 Sans utiliser Python, prédire les valeurs de `a` et `b` à la **fin** des programmes suivants, prenez le temps de bien écrire l'évolution des variables sur votre feuille pour ne pas perdre le fil :
@@ -92,3 +94,43 @@ for i in range(5) :
 	16
 	...
 	```
+	
+
+## Partie 3 : le while
+
+### Exercice 5 — Que va afficher ce programme ?
+
+Sans exécuter le programme, indiquez ce qu'il va afficher.
+
+```python
+nombre = 100
+
+while nombre > 0:
+    print(nombre)
+    nombre = nombre // 2
+```
+
+### Exercice 6 — Combien de tickets ?
+
+Un billet de cinéma coûte 8 €. On dispose de 50 €.
+
+Le programme ci-dessous permet de calculer le nombre de billets achetables selon l'argent de départ :
+
+```python
+argent = 50
+billets = 0
+
+while argent >= 8:
+    argent = argent - 8
+    billets = billets + 1
+```
+
+Sans tester avec Python, quelle valeur contient la variable `billets` à la fin du programme ?
+
+### Exercice 7 - L'épargne
+
+On place 100 € sur un compte. Chaque mois, on ajoute 25 €.
+
+Écrivez un programme qui détermine au bout de combien de mois l'épargne atteint au moins 500 €.
+
+Vous devez obtenir le résultat dans une variable mois et vous aurez également besoin d'une variable pour l'argent.

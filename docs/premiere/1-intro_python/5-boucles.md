@@ -157,3 +157,127 @@ La variable de boucle est importante car elle permet d'utiliser **la valeur du t
 
 !!! tip "Pause — À vous de jouer"
 	Faites les exercices 3 et 4 de la fiche associée.
+	
+## Les boucles non bornées
+
+Le deuxième type de boucle, appelé "boucle non bornée", est utile lorsque l'on ne sait pas à l'avance le nombre de répétitions à faire.
+
+### Fonctionnement du while et exemple
+
+En Python, on utilise le mot clé `while` suivi d'une expression booléenne (voir cours précédent). En français, while signifie "tant que" ce qui prend tout son sens lorsqu'il est suivi d'une condition.
+
+!!! example "À tester"
+	Voici un premier exemple:
+	
+	```python
+	nombre = 5
+	while nombre > 0:
+		print(nombre)
+		nombre = nombre - 1
+	```
+	
+Ce code peut se traduire littéralement par :
+
+```text
+nombre = 5
+Tant que nombre est strictement supérieur à 0 :
+	afficher nombre
+	enlever 1 à nombre
+```
+
+Le fonctionnement est le suivant :
+
+1. `nombre` vaut `5`.
+2. Python vérifie si `nombre > 0`. La condition est vraie.
+3. Le bloc d'instructions est exécuté : `5` est affiché, puis `1` est retiré à `nombre`.
+4. Python vérifie à nouveau la condition.
+5. La boucle continue tant que la condition est vraie.
+6. Lorsque `nombre` vaut `0`, la condition `nombre > 0` devient fausse : la boucle s'arrête.
+
+!!! tip "À retenir"
+    Une boucle `while` répète un bloc d'instructions **tant qu'une condition est vraie**.
+
+    Contrairement à une boucle `for`, on ne connaît pas nécessairement à l'avance le nombre de répétitions.
+	
+### Attention aux boucles infinies
+
+Regardons maintenant ce qui se passe si on oublie de modifier `nombre` dans le programme précédent:
+
+!!! example "À tester"
+    ```python
+    nombre = 5
+
+    while nombre > 0:
+        print(nombre)
+    ```
+
+    Que va faire ce programme ?
+	
+!!! warning "Attention"
+	Dans les boucles `while`, il faut faire très attention à la condition. En effet, il faut s'assurer qu'elle puisse **devenir fausse** à un moment donné.
+
+	Dans l'exemple précédent, la variable `nombre` n'est jamais modifiée. Elle vaut donc toujours `5` et la condition `nombre > 0` reste toujours vraie.
+
+	La boucle continue alors indéfiniment : on parle de **boucle infinie**.
+
+Pour éviter cela, il faut généralement qu'une ou plusieurs variables utilisées dans la condition évoluent au cours de la boucle.
+
+Dans notre premier exemple, `nombre` évoluait à chaque répétition :
+
+```text
+5 → 4 → 3 → 2 → 1 → 0
+```
+
+Lorsque `nombre` atteint `0`, la condition `nombre > 0` devient fausse et la boucle s'arrête.
+
+On appelle **variant** une variable qui évolue au cours des répétitions d'une boucle et qui permet à la boucle de progresser vers sa fin.
+
+!!! tip "À retenir"
+	Dans une boucle `while`, il faut vérifier que la condition puisse devenir fausse.
+	
+	Une variable utilisée dans cette condition peut servir de **variant** et varier au cours de la boucle pour qu'elle se termine.
+
+
+### L'intérêt du while
+
+L'intérêt principal d'une boucle `while` apparaît lorsque l'on ne peut pas connaître à l'avance le nombre de répétitions nécessaires.
+
+Par exemple, on peut demander à un utilisateur de saisir un mot de passe jusqu'à ce qu'il soit correct :
+
+!!! example "À tester"
+	```python
+	mot = input("Mot de passe : ")
+
+	while mot != "NSI":
+		print("Mot de passe incorrect.")
+		mot = input("Réessayez : ")
+
+	print("Bienvenue !")
+	```
+
+Ici, on ne sait pas à l'avance combien de fois l'utilisateur va saisir un mauvais mot de passe.
+
+* S'il saisit directement `NSI`, la boucle ne s'exécute pas.
+* S'il se trompe une fois, la boucle s'exécute une fois et redemande un mot à l'utilisateur.
+* S'il se trompe plusieurs fois, la boucle s'exécute à nouveau jusqu'à ce qu'il saisisse `NSI`.
+
+Le nombre de répétitions dépend donc de la situation rencontrée pendant l'exécution du programme.
+
+!!! tip "À retenir"
+	Une boucle `while` est particulièrement adaptée lorsque le nombre de répétitions **dépend d'une condition** et n'est pas connu à l'avance.
+
+### La syntaxe
+
+La syntaxe générale d'une boucle `while` est :
+
+```python
+while <condition>:
+    <bloc d'instructions à répéter>
+```
+
+* `while` signifie **« tant que »** ;
+* `<condition>` est une expression booléenne ;
+* le bloc indenté est exécuté tant que la condition est vraie.
+
+!!! tip "Pause — À vous de jouer"
+	Faites les exercices 5, 6 et 7.
