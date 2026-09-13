@@ -103,12 +103,14 @@ Une année est bissextile si :
 
 Par exemple :
 
+```python
 >>> est_bissextile(2024)
 True
 >>> est_bissextile(1900)
 False
 >>> est_bissextile(2000)
 True
+```
 
 ### Partie 2 - Nombre de jours d'un mois
 
@@ -118,12 +120,14 @@ Elle devra utiliser `est_bissextile` pour déterminer le nombre de jours du mois
 
 Par exemple :
 
+```python
 >>> nombre_jours(2, 2024)
 29
 >>> nombre_jours(2, 2025)
 28
 >>> nombre_jours(4, 2026)
 30
+```
 
 ### Partie 3 - Vérifier une date
 
@@ -134,10 +138,31 @@ Cette fonction devra utiliser `nombre_jours`.
 Par exemple :
 
 ```python
->>> est_bissextile(2024)
+>>> date_valide(29, 2, 2024)
 True
->>> est_bissextile(1900)
+>>> date_valide(29, 2, 2025)
 False
->>> est_bissextile(2000)
+>>> date_valide(31, 4, 2026)
+False
+>>> date_valide(15, 9, 2026)
 True
 ```
+
+### Partie 4 - Défi supplémentaire
+
+Écrivez une fonction lendemain(jour, mois, annee) qui renvoie la date du lendemain.
+
+Par exemple :
+
+```python
+>>> lendemain(14, 9, 2026)
+(15, 9, 2026)
+
+>>> lendemain(30, 4, 2026)
+(1, 5, 2026)
+
+>>> lendemain(31, 12, 2026)
+(1, 1, 2027)
+```
+
+Votre fonction devra utiliser les fonctions précédentes.
