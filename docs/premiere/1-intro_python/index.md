@@ -15,20 +15,23 @@ Dans ce premier chapitre, nous découvrons les premières constructions élémen
 
 ### Cours
 
-- [Cours 0 — Découvrir Thonny](0-interface_thonny.md)
-- [Cours 1 — Constructions élémentaires](1-constructions_elementaires.md)
-- [Cours 2 — Expressions booléennes et conditions](3-conditions.md)
-- [Cours 3 — Les boucles](5-boucles.md)
+- [Cours 0 — Découvrir Thonny](00-interface_thonny.md)
+- [Cours 1 — Constructions élémentaires](01-constructions_elementaires.md)
+- [Cours 2 — Expressions booléennes et conditions](03-conditions.md)
+- [Cours 3 — Les boucles](05-boucles.md)
+- [Cours 4 — Les fonctions](07-fonctions.md)
 
 ## Exercices
 
-- [Exercices 1 — Constructions](2-exos_constructions.md)
-- [Exercices 2 — Booléens](4-exos_conditions.md)
-- [Exercices 3 — Boucles](6-exos_boucles.md)
+- [Exercices 1 — Constructions](02-exos_constructions.md)
+- [Exercices 2 — Booléens](04-exos_conditions.md)
+- [Exercices 3 — Boucles](06-exos_boucles.md)
+- [Exercices 4 — Fonctions](08-exos_fonctions.md)
+- [Exercices Révision](10-révisions.md)
 
 ## Travaux pratiques
 
-A venir
+- [TP Turtle](09-tp_intro.md)
 
 
 ## Corrections
