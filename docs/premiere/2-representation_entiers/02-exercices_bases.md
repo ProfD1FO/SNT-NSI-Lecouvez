@@ -12,10 +12,10 @@
 
 ### Q2 - Maintenant, pour chacune des décompositions ci-dessous, donner sa valeur en écriture décimale
 
-- $ 1\times10^2 + 0\times10^1 + 8\times10^0 $
-- $ 8\times10^3 + 9\times10^2 + 1\times10^1 + 0\times10^0 $
-- $ 4\times10^1 + 8\times10^0 $
-- $ 1\times10^4 + 1\times10^3 + 9\times10^2 + 5\times10^1 + 7\times10^0 $
+- $1\times10^2 + 0\times10^1 + 8\times10^0$
+- $8\times10^3 + 9\times10^2 + 1\times10^1 + 0\times10^0$
+- $4\times10^1 + 8\times10^0$
+- $1\times10^4 + 1\times10^3 + 9\times10^2 + 5\times10^1 + 7\times10^0$
 
 ## Exercice 2 - Décomposer en base 2
 

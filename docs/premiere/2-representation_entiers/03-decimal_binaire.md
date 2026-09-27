@@ -10,7 +10,7 @@ La méthode la plus rapide et simpliste est celle de la décomposition. On va to
 
 Prenons un exemple en essayant d'écrire 26 en binaire. Pour cela, je vais le décomposer en puissance de 2 :
 
-Je sais que $ 26 = 16 + 8 + 2 $
+Je sais que $26 = 16 + 8 + 2$
 
 Cela est égal à $1\times2^4 + 1\times2^3 + 0\times2^2 + 1\times2^1 + 0\times2^0$ 
 
