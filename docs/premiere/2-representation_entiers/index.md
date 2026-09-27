@@ -22,4 +22,4 @@ Dans ce chapitre, on s'intéressera d'abord au cas des nombres entiers et de com
 
 ### Cours
 
-- [Cours 1 — Les bases de nombre](01-bases_nombre.md)
+- [Cours 1 — Les bases de nombre](01-bases_nombres.md)
