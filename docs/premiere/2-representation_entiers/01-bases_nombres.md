@@ -77,6 +77,8 @@ Elle ne possède que deux chiffres :
 
 `0` et `1`
 
+Dans un nombre binaire, chaque valeur est appelé **un bit**.
+
 Les positions correspondent alors aux puissances de 2 :
 
 $$
@@ -113,6 +115,9 @@ Le nombre `1011` en base 2 représente donc le nombre `11` en base 10.
 
 !!! warning "attention"
     Lorsque l'on écrit un entier en forme binaire, il est essentiel de préciser qu'il est écrit sous cette forme car ce n'est pas quelque chose d'habituel. Par exemple, l'entier 11 s'écrit en binaire $$1011_2$$ et on ajoute donc la base en petit en dessous à droite du nombre, parfois à côté d'un trait vertical.
+
+
+NB : Lorsque l'on travaille en binaire, on regroupe souvent les bits par paquet de 8 que l'on appelle des **octets**.
 
 ## D'autres bases
 
