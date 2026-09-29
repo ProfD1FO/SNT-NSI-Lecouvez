@@ -23,3 +23,17 @@ Dans ce chapitre, on s'intéressera d'abord au cas des nombres entiers et de com
 ### Cours
 
 - [Cours 1 — Les bases de nombre](01-bases_nombres.md)
+
+- [Cours 2 — Entiers positifs en binaire](03-decimal_binaire.md)
+
+- [Cours 3 — Entiers relatifs en binaire](05-entiers_relatifs.md)
+
+
+### Exercices
+
+
+- [Exercices 1 — Exercices sur les bases](02-exercices_bases.md)
+
+- [Exercices 2 — Exercices sur les conversions d'entiers positifs](04-exos_conversions.md)
+
+- [Exercices 3 — Exercices sur les conversions d'entiers relatifs avec complément à deux](06-exos_relatifs.md)

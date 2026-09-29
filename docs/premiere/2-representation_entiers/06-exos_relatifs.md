@@ -1,8 +1,8 @@
-# Fiche d'exercices — Entiers relatifs en complément à deux
+# Exercices 3 - Entiers relatifs en complément à deux
 
 ## Exercice 1 — Décimal → complément à deux
 
-On travaille sur **8 bits**. Pour chaque nombre, donnez sa représentation en complément à deux en détaillant les étapes.
+On travaille sur **8 bits**. Pour chaque nombre, donnez sa représentation en **complément à deux** en détaillant les étapes.
 
 1. $-5$
 2. $-12$
@@ -41,9 +41,9 @@ Si le résultat dépasse 8 bits, on ne conserve que les **8 bits de droite**.
 
 Sans regarder le cours :
 
-1. Représentez $-18$ sur 8 bits.
+1. Représentez $-18$ sur 8 bits en **complément à deux**.
 2. Convertissez `11100110` en décimal.
-3. Représentez $-64$ sur 8 bits.
+3. Représentez $-64$ sur 8 bits en **complément à deux**.
 4. Donnez l'intervalle des entiers représentables sur 8 bits.
 5. Expliquez en une phrase pourquoi le nombre de bits doit être fixé à l'avance.
 
