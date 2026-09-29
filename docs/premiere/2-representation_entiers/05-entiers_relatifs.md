@@ -230,7 +230,7 @@ Par exemple :
 !!! warning "Attention !"
 	Le nombre de bits est encore plus essentiel lorsque l'on utilise le complément à deux.
 
-	```
+	
 	Par exemple, la représentation de $-33$ n'est pas la même sur 8 bits et sur 16 bits :
 
 	\[
@@ -244,4 +244,4 @@ Par exemple :
 	\]
 
 	On conserve toujours la même valeur, mais on ajoute des $1$ à gauche lorsque l'on augmente la taille de la représentation.
-```
+
