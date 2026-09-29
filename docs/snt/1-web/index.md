@@ -11,3 +11,7 @@ Aujourd'hui, le web est extrêmement populaire et regroupe un nombre de pages é
 - [Fiche 3 - Découverte HTML (format pdf)](fichiers/fiche3_HTML.pdf)
 
 - [Fiche 3 - Découverte HTML (format odt)](fichiers/fiche3_HTML.odt)
+
+- [Fiche 4 - Découverte CSS (format pdf)](fichiers/fiche4_css.pdf)
+
+- [Fiche 4 - Découverte CSS (format odt)](fichiers/fiche4_css.odt)
