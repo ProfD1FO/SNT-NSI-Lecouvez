@@ -150,19 +150,17 @@ Exemples :
 ```
 
 !!! warning "Attention"
+    Une chaîne de caractères ne peut pas être modifiée directement caractère par caractère.
 
-````
-Une chaîne de caractères ne peut pas être modifiée directement caractère par caractère.
+    Par exemple, l'instruction suivante provoque une erreur :
 
-Par exemple, l'instruction suivante provoque une erreur :
+    ```python
+    mot = "Bonjour"
+    mot[0] = "b"
+    ```
 
-```python
-mot = "Bonjour"
-mot[0] = "b"
-```
+    Il faudra donc construire une **nouvelle chaîne de caractères** dans la fonction.
 
-Il faudra donc construire une **nouvelle chaîne de caractères**.
-````
 
 ---
 
