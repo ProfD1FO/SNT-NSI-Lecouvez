@@ -15,3 +15,7 @@ Aujourd'hui, le web est extrêmement populaire et regroupe un nombre de pages é
 - [Fiche 4 - Découverte CSS (format pdf)](fichiers/fiche4_css.pdf)
 
 - [Fiche 4 - Découverte CSS (format odt)](fichiers/fiche4_css.odt)
+
+- [Fiche 5 - Moteurs de recherche et pagerank (format odt)](fichiers/fiche5_pagerank.odt)
+
+- [Fiche 5 - Moteurs de recherche et pagerank (format odt)](fichiers/fiche5_pagerank.pdf)
