@@ -24,10 +24,12 @@ Au nombre de 7 (8 avec le Python), ils vont vous permettre d'élargir vos connai
 
 Si vous ne souhaitez pas vous balader dans les différents thèmes, voici les liens vers les fiches dans l'ordre :
 
-- [Fiche 1](0-decouverte/fichiers/fiche-01-environnement.pdf)
+- [Fiche 1 - INTRO](0-decouverte/fichiers/fiche-01-environnement.pdf)
 
-- [Fiche 2](1-web/fichiers/fiche2_intro_web.pdf)
+- [Fiche 2 - WEB](1-web/fichiers/fiche2_intro_web.pdf)
 
-- [Fiche 3](1-web/fichiers/fiche3_HTML.pdf)
+- [Fiche 3 - WEB](1-web/fichiers/fiche3_HTML.pdf)
 
-- [Fiche 4](1-web/fichiers/fiche4_css.pdf)
+- [Fiche 4 - WEB](1-web/fichiers/fiche4_css.pdf)
+
+- [Fiche 5 - WEB](1-web/fichiers/fiche5_pagerank.pdf)

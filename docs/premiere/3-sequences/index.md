@@ -26,3 +26,7 @@ Dans ce chapitre, nous allons généraliser cette notion et découvrir d'autres 
 ### Exercices
 
 - [Exercices 1 — Les chaînes de caractères](02-exos_chaines.md)
+
+### TP
+
+- [TP 1 — Codes détecteurs d'erreur](03-tp_codes.md)
