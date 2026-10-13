@@ -20,4 +20,11 @@ Attention, les cours présents sur ce site ne sont qu'un résumé et ne remplace
 
 * Projets / TP notés
 
+## Les chapitres 
+
+- [Chapitre 1 - Introduction à Python](1-intro_python/index.md)
+
+- [Chapitre 2 - Représentation des entiers](2-representation_entiers/index.md)
+
+- [Chapitre 3 - Les séquences](3-sequences/index.md)
 
