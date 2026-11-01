@@ -33,3 +33,5 @@ Si vous ne souhaitez pas vous balader dans les différents thèmes, voici les li
 - [Fiche 4 - WEB](1-web/fichiers/fiche4_css.pdf)
 
 - [Fiche 5 - WEB](1-web/fichiers/fiche5_pagerank.pdf)
+
+- [Fiche 6 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche6_recherches.pdf)
