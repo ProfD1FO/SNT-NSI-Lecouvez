@@ -2,7 +2,9 @@
 
 Maintenant que vous êtes capables de manipuler une séquence (indices et parcours), il est temps pour vous de découvrir un tout nouveau type de séquence : les **listes Python**
 
-## Définition des listes
+## Partie 1 - Manipuler et comprendre les listes
+
+### Définition des listes
 
 En Python, le type `list` est un type de données qui correspond à une séquence : c'est une suite ordonnée d'éléments accessibles selon leur position. Néanmoins, elles diffèrent des chaînes de caractères sur plusieurs points que nous allons voir ensemble dans ce cours. Il est également à noter que les listes sont un outil très puissant lorsque l'on manipule en Python, ce cours est donc essentiel.
 
@@ -22,7 +24,7 @@ Ici, il y a déjà deux choses à constater :
 !!! example "À faire"
     Créer une liste appelée `notes` et qui contiendra vos notes du trimestre en NSI pour le moment
 
-## Indices de liste
+### Indices de liste
 
 Comme dit plus tôt, les listes sont des séquences et donc comme les chaînes de caractères, les mêmes outils peuvent être employés pour les manipuler à commencer par les indices et la fonction `len()`.
 
@@ -50,11 +52,11 @@ Par exemple :
 
 Ici, on cherche à accéder à l'élément d'indice 3 de la liste `[1, 3, 9, -4, 0]`. Comme les indices commencent à 0, cela correspond au 4ème élément qui est donc -4.
 
-## Parcourir les listes
+### Parcourir les listes
 
 Encore une fois, qui dit séquence d'éléments dit forcément moyen de les parcourir. Ici comme pour les indices, la méthode est **exactement** la même que pour les chaînes de caractères. On utilise donc encore une fois les boucles. La partie qui va suivre sera donc presque en tout point identique à celle du cours précédent.
 
-### Parcours élément par élément
+#### Parcours élément par élément
 
 Pour parcourir une séquence **élément par élément**, (ce qui veut dire qu'à chaque tout, la variable de boucle devient l'élément suivant de la séquence), on utilise la boucle `for`. 
 
@@ -86,7 +88,7 @@ for variable in sequence :
     ...
     ...
 ```
-### Parcours par indices
+#### Parcours par indices
 
 En fonction des besoins, il peut-être essentiel de pouvoir parcourir la séquence indice par indice. Par exemple lorsque l'on recherche la position précise d'un élément. Pour cela, on peut utiliser n'importe laquelle des deux types de boucles que vous connaissez : `for` et `while` et en utilisant ingénieusement la fonction `len`. 
 
@@ -106,7 +108,7 @@ En fonction des besoins, il peut-être essentiel de pouvoir parcourir la séquen
 
     ```
 
-## Listes de listes
+### Listes de listes
 
 Nous avons vu au début que la grande particularité des listes était de pouvoir contenir des éléments de différents types. Pour le moment, nous n'avons mis dans les listes que les types de base que vous connaissez mais puisque que nous pouvons y mettre ce que l'on veut, on peut y mettre d'autres listes.
 
@@ -143,5 +145,9 @@ Intéressons-nous rapidement à la syntaxe : `mega_liste[1][1]` . Ici, Python va
 - D'abord on regarde qui est `mega_liste[1]` : cela correspond à la liste `[False, True, False]`
 - Ensuite, il ne reste plus qu'à faire : `[False, True, False][1]` ce qui correspond à True. 
 
-Le résultat final est donc True. 
+Le résultat final est donc True.
 
+!!! tip "À vous de jouer"
+    Faites les exercices 1,2,3 et 4 de la fiche d'exercices 2 du chapitre
+
+## Partie 2 - Fabriquer des listes et modifier des listes

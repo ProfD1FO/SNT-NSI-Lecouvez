@@ -1,4 +1,4 @@
-# Thème 1 : Le Web
+# Thème 2 : Les réseaux sociaux
 
 Aujourd'hui, les réseaux sociaux jouent un rôle majeur dans notre vie que ce soit sur le plan personnel ou professionnel. Dans ce thème, vous découvrirez les différences de fonctionnement, ce qu'est votre identité numérique mais également les dérives que provoquent certain réseaux.
 
