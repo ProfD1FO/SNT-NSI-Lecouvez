@@ -23,6 +23,12 @@ Ici, il y a déjà deux choses à constater :
 
 !!! example "À faire"
     Créer une liste appelée `notes` et qui contiendra vos notes du trimestre en NSI pour le moment
+	
+	
+!!! warning "Attention"
+	Attention, comme une liste accepte différents types d'éléments, il est théoriquement possible de mettre plusieurs types différents dans une seule liste, par exemple, `li = [2, "Jean", True, 6.1]`. 
+	
+	Cependant, en pratique, il est extrêmement rare que cela puisse être utile, en plus de rendre le débuggage plus difficile. On évitera donc de mélanger les types dans une même liste.
 
 ### Indices de liste
 
@@ -67,7 +73,7 @@ Pour parcourir une séquence **élément par élément**, (ce qui veut dire qu'�
     li = [33, 21, 11, 99, 2]
 
     for element in li :
-        print(li)
+        print(element)
     ```
 
     Et maintenant que va afficher le programme suivant ?
@@ -107,6 +113,8 @@ En fonction des besoins, il peut-être essentiel de pouvoir parcourir la séquen
     >>> mystere([2,-6, 3, 0, 9])
 
     ```
+	
+	NB : En Python, None est une valeur spéciale qui signifie "rien". Il peut être pratique de l'utiliser lorsque l'on souhaite ne rien renvoyer dans certains cas d'une fonction, comme au dessus.
 
 ### Listes de listes
 
@@ -150,4 +158,179 @@ Le résultat final est donc True.
 !!! tip "À vous de jouer"
     Faites les exercices 1,2,3 et 4 de la fiche d'exercices 2 du chapitre
 
-## Partie 2 - Fabriquer des listes et modifier des listes
+## Partie 2 - Fabriquer et modifier des listes
+
+Jusqu'à présent, nous avons appris à créer des listes et à accéder à leurs éléments. Cependant, les listes Python possèdent une propriété très intéressante que les chaînes de caractères ne possèdent pas : elles sont **modifiables** (on dit aussi **mutables**)!
+
+Cela signifie que nous pouvons changer leur contenu après leur création, en ajoutant, supprimant ou remplaçant des éléments.
+
+### Modifier un élément
+
+Nous avons vu qu'il était possible d'accéder à un élément d'une liste grâce à son indice. Il est également possible de modifier directement cet élément en utilisant cette même notation.
+
+Par exemple :
+
+```python
+notes = [12, 15, 8, 17]
+
+notes[2] = 14
+
+print(notes)
+# [12, 15, 14, 17]
+```
+
+Ici, nous avons remplacé l'élément d'indice 2, qui valait initialement `8`, par la valeur `14`.
+
+!!! example "À tester"
+    On considère la liste suivante :
+
+    ```python
+    nombres = [4, 8, 12, 16, 20]
+    ```
+
+    1. Remplacer le premier élément par `10`.
+    2. Remplacer le dernier élément par `30`.
+    3. Afficher la liste obtenue.
+
+### Ajouter et supprimer des éléments
+
+Il est également possible de modifier la taille d'une liste, en ajoutant ou en supprimant des éléments.
+
+Pour cela, nous allons découvrir deux méthodes particulièrement utiles.
+
+#### Ajouter un élément avec `append`
+
+La méthode `append()` permet d'ajouter un élément **à la fin** d'une liste.
+
+Elle prend en paramètre l'élément à ajouter.
+
+Attention, sa synatxe est particulière, il faut écrire : `liste.append(element)` .
+
+Par exemple :
+
+```python
+prenoms = ["Alice", "Bob", "Charlie"]
+
+prenoms.append("David")
+
+print(prenoms)
+# ["Alice", "Bob", "Charlie", "David"]
+```
+
+On remarque que la liste contient désormais un élément supplémentaire, placé à la fin.
+
+!!! example "À tester"
+    1. Créer une liste `animaux` contenant les chaînes de caractères `"chat"` et `"chien"`.
+    2. Ajouter `"lapin"` à cette liste avec `append()`.
+    3. Afficher la liste obtenue.
+
+#### Supprimer un élément avec `pop`
+
+À l'inverse, la méthode `pop()` permet de supprimer un élément d'une liste.
+
+Elle prend en paramètre l'**indice** de l'élément à supprimer.
+
+Attention, sa synatxe est particulière, il faut écrire : `liste.pop(indice)` .
+
+Par exemple :
+
+```python
+prenoms = ["Alice", "Bob", "Charlie", "David"]
+
+prenoms.pop(1)
+
+print(prenoms)
+# ["Alice", "Charlie", "David"]
+```
+
+Ici, nous avons supprimé l'élément d'indice 1, c'est-à-dire `"Bob"`.
+
+Une particularité intéressante : `pop()` **renvoie également** l'élément qui vient d'être supprimé, elle fait deux choses en même temps. Il est donc possible de récupérer sa valeur dans une variable.
+
+```python
+prenoms = ["Alice", "Bob", "Charlie"]
+
+supprime = prenoms.pop(1)
+
+print(supprime)  # "Bob"
+print(prenoms)   # ["Alice", "Charlie"]
+```
+
+!!! example "À tester"
+    On considère la liste suivante :
+
+    ```python
+    couleurs = ["rouge", "vert", "bleu", "jaune"]
+    ```
+
+    1. Supprimer l'élément d'indice 2.
+    2. Afficher la liste obtenue.
+    3. Supprimer le premier élément et stocker sa valeur dans une variable `couleur`.
+    4. Afficher la couleur supprimée puis la liste.
+	
+!!! tip "A savoir"
+	Comme dit plus haut, la méthode `pop()` supprime l'élément d'indice voulu dans une liste. Elle a donc besoin d'un paramètre qui correspond à l'indice. 
+	
+	Cependant il est également possible de ne pas lui donner d'indice en paramètre. Par défaut, la méthode va supprimer et renvoyer le dernier élément de la liste. Par exemple:
+	
+	```python
+	notes = [11, 10, 20, 14]
+	notes.pop()
+	print(notes)
+	```
+	Ce programme affichera `[11, 10, 20]` car le dernier élément a été supprimé.
+	
+### Construire une liste progressivement
+
+Maintenant que nous savons ajouter des éléments à une liste, nous pouvons commencer à construire des listes progressivement grâce aux boucles.
+
+Prenons un exemple : nous souhaitons créer une liste contenant uniquement les nombres pairs d'une autre liste.
+
+```python
+nombres = [3, 8, 12, 5, 7, 10]
+pairs = []
+
+for nombre in nombres:
+    if nombre % 2 == 0:
+        pairs.append(nombre)
+
+print(pairs)
+# [8, 12, 10]
+```
+
+Dans cet exemple, nous avons procédé en plusieurs étapes :
+
+- Nous avons d'abord créé une liste vide appelée `pairs`.
+- Nous avons ensuite parcouru tous les éléments de la liste `nombres`.
+- Pour chaque élément, nous avons vérifié s'il était pair.
+- Si c'était le cas, nous l'avons ajouté à la liste `pairs` avec `append()`.
+
+Cette méthode est particulièrement utile lorsque l'on souhaite extraire certains éléments d'une liste en fonction d'une condition.
+
+!!! example "À vous de jouer"
+    Écrire une fonction `positifs(li)` qui prend en paramètre une liste d'entiers et qui renvoie une nouvelle liste contenant uniquement les nombres positifs de `li`.
+
+    Par exemple :
+
+    ```python
+    >>> positifs([-3, 5, 0, -8, 12, 4])
+    [5, 0, 12, 4]
+    ```
+
+### Quelques opérations utiles
+
+Pour terminer, voici quelques opérations supplémentaires qui peuvent être utilisées avec les listes Python. Les trois dernières ne sont pas à connaître par coeur mais pourrons vous être utile par la suite .
+
+| Instruction | Fonctionnement |
+|---|---|
+| `element in liste` | Vérifie si un élément appartient à une liste (renvoie True ou False) |
+| `liste1 + liste2` | Fusionne deux listes (comme pour les chaînes de caractères) |
+| `liste * 3` | Répète une liste trois fois (comme pour les chaînes de caractères) |
+| `min(liste)` | Renvoie le plus petit élément |
+| `max(liste)` | Renvoie le plus grand élément |
+| `sum(liste)` | Calcule la somme des éléments |
+
+Ces opérations permettent de manipuler plus facilement les listes sans avoir systématiquement besoin d'écrire une boucle.
+
+!!! tip "À vous de jouer"
+    Finissez les exercices de la fiche d'exercices 2 du chapitre.
