@@ -23,10 +23,16 @@ Dans ce chapitre, nous allons généraliser cette notion et découvrir d'autres 
 
 - [Cours 1 — Les chaînes de caractères](01-chaines_caracteres.md)
 
+- [Cours 2 — Les listes](04-listes.md)
+
 ### Exercices
 
 - [Exercices 1 — Les chaînes de caractères](02-exos_chaines.md)
 
+- [Exercices 2 — Les listes](05-exos_listes.md)
+
 ### TP
 
 - [TP 1 — Codes détecteurs d'erreur](03-tp_codes.md)
+
+- [TP 2 — Jeu de cartes](06-tp_listes.md)
