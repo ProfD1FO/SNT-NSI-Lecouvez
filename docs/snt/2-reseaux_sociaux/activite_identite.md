@@ -8,9 +8,9 @@ Essayez de rassembler le plus d'informations possibles et de répondre aux quest
 
 **Compte public · 7 publications**
 
-**Lucas_56_04**
+**@Lucas_56_04**
 
-* Ma discrétion n'a d'égale que ma grande sagesse *
+*** Un grand pouvoir implique de grandes responsabilités ***
 
 ---
 
