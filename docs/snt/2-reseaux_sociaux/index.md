@@ -7,3 +7,7 @@ Aujourd'hui, les réseaux sociaux jouent un rôle majeur dans notre vie que ce s
 - [Fiche 6 - Comparatif des réseaux sociaux](fichiers/fiche6_recherches.pdf)
 
 - [Fiche 6 - Comparatif des réseaux sociaux](fichiers/fiche6_recherches.odt)
+
+- [Fiche 7 - Identité numérique](fichiers/fiche7_identite.pdf)
+
+- [Fiche 7 - Identité numérique](fichiers/fiche7_identite.odt)
