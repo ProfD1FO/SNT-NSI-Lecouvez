@@ -35,3 +35,7 @@ Si vous ne souhaitez pas vous balader dans les différents thèmes, voici les li
 - [Fiche 5 - WEB](1-web/fichiers/fiche5_pagerank.pdf)
 
 - [Fiche 6 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche6_recherches.pdf)
+
+- [Fiche 7 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche7_identite.pdf)
+
+- [Fiche 8 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche8_cyberharcelement.pdf)

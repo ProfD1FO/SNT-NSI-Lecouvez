@@ -11,3 +11,7 @@ Aujourd'hui, les réseaux sociaux jouent un rôle majeur dans notre vie que ce s
 - [Fiche 7 - Identité numérique](fichiers/fiche7_identite.pdf)
 
 - [Fiche 7 - Identité numérique](fichiers/fiche7_identite.odt)
+
+- [Fiche 8 - Cyberharcèlement et cyberviolence](fichiers/fiche8_cyberharcelement.pdf)
+
+- [Fiche 8 - Cyberharcèlement et cyberviolence](fichiers/fiche8_cyberharcelement.odt)
