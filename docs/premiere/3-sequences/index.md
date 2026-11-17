@@ -25,11 +25,15 @@ Dans ce chapitre, nous allons généraliser cette notion et découvrir d'autres 
 
 - [Cours 2 — Les listes](04-listes.md)
 
+- [Cours 3 — Les tuples](07-tuples.md)
+
 ### Exercices
 
 - [Exercices 1 — Les chaînes de caractères](02-exos_chaines.md)
 
 - [Exercices 2 — Les listes](05-exos_listes.md)
+
+- [Exercices 3 — Les tuples](08-exos_tuples.md)
 
 ### TP
 
