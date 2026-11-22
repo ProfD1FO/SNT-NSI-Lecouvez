@@ -1,6 +1,6 @@
 # Cours 2 - Exécution des instructions par le processeur
 
-Un programme informatique est constitué d'une succession d'instructions que le processeur doit exécuter. Nous avons vu dans le curs précédent que l'architecture de von Neumann stockait les instructions ET les données dans une même mémoire.
+Un programme informatique est constitué d'une succession d'instructions que le processeur doit exécuter. Nous avons vu dans le cours précédent que l'architecture de von Neumann stockait les instructions ET les données dans une même mémoire.
 
 Mais comment le processeur sait-il quelle instruction exécuter ? Comment récupère-t-il les données nécessaires ? Et comment réalise-t-il les opérations demandées ?
 
@@ -30,15 +30,20 @@ Une fois l'instruction exécutée, le processeur recommence le cycle avec l'inst
 
 **À retenir :** ce cycle est souvent appelé cycle *recherche-décodage-exécution*. Il permet au processeur de traiter successivement les instructions d'un programme.
 
-## 2.3. Exemple : exécuter un programme simple
+## 2.3. Jeu d'instructions et exécution d'un programme simple
 
-Considérons un processeur simplifié qui utilise les instructions suivantes :
+Chaque processeur possède ce que l'on appelle un "jeu d'instructions", il s'agit de l'ensemble des instructions qu'il comprend et avec lequel on peut écrire des programmes.
+
+Cette année, nous considérons un processeur simplifié qui utilise le jeu d'instructions suivant  :
 
 | Instruction | Signification |
 |---|---|
 | `LOAD adresse` | Charge dans l'ACC la valeur située à l'adresse indiquée. |
 | `ADD adresse` | Ajoute à l'ACC la valeur située à l'adresse indiquée. |
 | `STORE adresse` | Écrit le contenu de l'ACC à l'adresse indiquée. |
+| `SUB adresse` | Retire à l'ACC la valeur située à l'adresse indiquée |
+| `MULT adresse` | Multiplie avec l'ACC la valeur située à l'adresse indiquée |
+| `HALT` | Arrête le cycle d'exécution en cours |
 
 Ces instructions sont volontairement simplifiées : elles permettent de comprendre les mécanismes fondamentaux sans avoir à étudier le langage machine d'un véritable processeur.
 
@@ -133,4 +138,4 @@ Les instructions de saut permettent notamment de construire des **boucles** et d
 
 ---
 
-**Remarque sur le modèle étudié :** dans nos exemples, chaque instruction occupe une seule case mémoire et le CO augmente donc de 1 après chaque recherche. Sur les véritables processeurs, les instructions sont encodées en binaire et peuvent occuper plusieurs octets. Le déplacement du compteur ordinal dépend alors de la taille de l'instruction, et les mécanismes internes sont plus complexes.
+**Remarque sur le modèle étudié :** dans nos exemples, chaque instruction occupe une seule case mémoire et le CO augmente donc de 1 après chaque recherche (sauf en cas de saut). Sur les véritables processeurs, les instructions sont encodées en binaire et peuvent occuper plusieurs octets. Le déplacement du compteur ordinal dépend alors de la taille de l'instruction, et les mécanismes internes sont plus complexes.
