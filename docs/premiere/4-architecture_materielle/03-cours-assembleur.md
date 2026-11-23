@@ -6,7 +6,47 @@ Mais comment le processeur sait-il quelle instruction exécuter ? Comment récup
 
 Pour répondre à ces questions, nous allons étudier le fonctionnement interne du processeur à travers un modèle simplifié.
 
-## 2.1. Les registres du processeur
+## 2.1. Du programme au langage machine
+
+Les programmes informatiques sont généralement écrits dans des langages de programmation conçus pour être compréhensibles par les humains, comme Python ou C. Cependant, le processeur ne peut pas exécuter directement ces instructions : il ne comprend que des **instructions machine**, codées en binaire.
+
+Il est donc nécessaire de traduire le programme avant son exécution.
+
+### Les différents niveaux de langage
+
+On peut distinguer plusieurs niveaux :
+
+- **Les langages de programmation** (Python, C...) : ils permettent au programmeur d'écrire des instructions relativement faciles à comprendre et à manipuler.
+- **Le langage assembleur** : il utilise des instructions symboliques proches des instructions réellement exécutées par le processeur. Par exemple, `LOAD`, `ADD` ou `STORE`.
+- **Le langage machine** : il correspond aux instructions codées en binaire que le processeur est capable d'exécuter directement.
+
+### La compilation
+
+Un **compilateur** est un programme chargé de traduire le code source écrit dans un langage de programmation en instructions machine.
+
+Par exemple, le programme suivant :
+
+```python
+a = 12
+b = 7
+c = a + b
+```
+
+peut être traduit en une succession d'instructions machine permettant notamment de charger les valeurs, de réaliser leur addition et de stocker le résultat.
+
+Cette traduction produit un programme exécutable, qui peut ensuite être enregistré sur un support de stockage, comme un SSD.
+
+Certains langages, comme Python, utilisent plutôt un interpréteur pour exécuter les programmes. Celui-ci prend en charge leur traduction et leur exécution.
+
+### Le chargement en mémoire
+
+Lorsqu'un programme est lancé, le système d'exploitation organise son chargement en mémoire vive (RAM). Le processeur peut alors récupérer les instructions du programme en mémoire et commencer leur exécution.
+
+On retrouve ainsi le principe de l'architecture de von Neumann : **les instructions du programme et les données qu'il manipule sont stockées dans la mémoire centrale**.
+
+**À retenir :** le programmeur écrit dans un langage de programmation, mais le processeur exécute des instructions machine codées en binaire. La compilation permet notamment de traduire un programme en instructions que le processeur peut exécuter.
+
+## 2.2. Les registres du processeur
 
 Le processeur dispose de petites zones de mémoire internes, très rapides, appelées **registres**. Ils permettent de conserver temporairement les informations nécessaires à l'exécution des instructions.
 
@@ -18,7 +58,7 @@ Nous allons nous intéresser à trois registres :
 
 Ces registres ont des rôles différents : le CO indique où trouver la prochaine instruction, le RI conserve l'instruction en cours et l'ACC contient une donnée ou un résultat utile à son exécution.
 
-## 2.2. Le cycle d'exécution d'une instruction
+## 2.3. Le cycle d'exécution d'une instruction
 
 Le processeur exécute les instructions d'un programme en répétant continuellement un cycle composé de trois grandes étapes :
 
@@ -30,20 +70,20 @@ Une fois l'instruction exécutée, le processeur recommence le cycle avec l'inst
 
 **À retenir :** ce cycle est souvent appelé cycle *recherche-décodage-exécution*. Il permet au processeur de traiter successivement les instructions d'un programme.
 
-## 2.3. Jeu d'instructions et exécution d'un programme simple
+## 2.4. Jeu d'instructions et exécution d'un programme simple
 
-Chaque processeur possède ce que l'on appelle un "jeu d'instructions", il s'agit de l'ensemble des instructions qu'il comprend et avec lequel on peut écrire des programmes.
+Chaque processeur possède ce que l'on appelle un **jeu d'instructions** : il s'agit de l'ensemble des instructions qu'il comprend et qu'il est capable d'exécuter.
 
-Cette année, nous considérons un processeur simplifié qui utilise le jeu d'instructions suivant  :
+Cette année, nous considérons un processeur simplifié qui utilise le jeu d'instructions suivant :
 
 | Instruction | Signification |
 |---|---|
 | `LOAD adresse` | Charge dans l'ACC la valeur située à l'adresse indiquée. |
 | `ADD adresse` | Ajoute à l'ACC la valeur située à l'adresse indiquée. |
 | `STORE adresse` | Écrit le contenu de l'ACC à l'adresse indiquée. |
-| `SUB adresse` | Retire à l'ACC la valeur située à l'adresse indiquée |
-| `MULT adresse` | Multiplie avec l'ACC la valeur située à l'adresse indiquée |
-| `HALT` | Arrête le cycle d'exécution en cours |
+| `SUB adresse` | Soustrait de l'ACC la valeur située à l'adresse indiquée. |
+| `MULT adresse` | Multiplie le contenu de l'ACC par la valeur située à l'adresse indiquée. |
+| `HALT` | Arrête le cycle d'exécution en cours. |
 
 Ces instructions sont volontairement simplifiées : elles permettent de comprendre les mécanismes fondamentaux sans avoir à étudier le langage machine d'un véritable processeur.
 
@@ -124,7 +164,7 @@ Cet exemple illustre le rôle complémentaire des différents constituants du pr
 - L'**ACC** conserve les données et résultats intermédiaires.
 - La **mémoire** fournit les instructions et les données, puis conserve les résultats qui doivent y être enregistrés.
 
-## 2.4. Les instructions de saut
+## 2.5. Les instructions de saut
 
 Jusqu'ici, notre programme a été exécuté dans l'ordre des adresses : 0, puis 1, puis 2. Mais il est possible de modifier cet ordre.
 

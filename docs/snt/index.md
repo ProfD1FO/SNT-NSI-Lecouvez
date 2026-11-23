@@ -39,3 +39,5 @@ Si vous ne souhaitez pas vous balader dans les différents thèmes, voici les li
 - [Fiche 7 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche7_identite.pdf)
 
 - [Fiche 8 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche8_cyberharcelement.pdf)
+
+- [Fiche 9 - Réseaux sociaux](2-reseaux_sociaux/fichiers/fiche9_graphes.pdf)
