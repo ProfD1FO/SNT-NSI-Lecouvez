@@ -15,3 +15,7 @@ Aujourd'hui, les réseaux sociaux jouent un rôle majeur dans notre vie que ce s
 - [Fiche 8 - Cyberharcèlement et cyberviolence](fichiers/fiche8_cyberharcelement.pdf)
 
 - [Fiche 8 - Cyberharcèlement et cyberviolence](fichiers/fiche8_cyberharcelement.odt)
+
+- [Fiche 9 - Graphes et réseaux sociaux](fichiers/fiche9_graphes.pdf)
+
+- [Fiche 9 - Graphes et réseaux sociaux](fichiers/fiche9_graphes.odt)
