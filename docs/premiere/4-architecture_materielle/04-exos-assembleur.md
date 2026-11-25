@@ -138,19 +138,7 @@ Pour cette partie, utiliser le simulateur VNSim :
 
 https://apps.lyceum.fr/vnsim/
 
-**Attention :** le simulateur utilise une notation différente de celle de nos exercices papier.
-
-| Dans le cours | Dans VNSim |
-|---|---|
-| `LOAD` | `LOD` |
-| `STORE` | `STO` |
-| `MULT` | `MUL` |
-| `HALT` | `HLT` |
-| `JUMP` | `JMP` |
-
-Les instructions `ADD` et `SUB` conservent le même nom.
-
-Dans VNSim, les variables désignent des emplacements de mémoire. Pour enregistrer une valeur, on utilise donc par exemple `STORE W`, et non `STORE 8`.
+**Attention :** Dans VNSim, les variables désignent des emplacements de mémoire. Pour enregistrer une valeur, on utilise donc par exemple `STORE W`, et non `STORE 8`.
 
 ### Exercice 4 – Construire et observer un programme
 
