@@ -20,7 +20,7 @@ En 1945, John von Neumann contribue à la diffusion d'une nouvelle organisation 
 
 L'idée fondamentale est de **stocker les instructions d'un programme dans la mémoire de l'ordinateur, au même titre que les données qu'il manipule**.
 
-![Principe du programme enregistré](images/carte_mere.png)
+![Principe du programme enregistré](images/programme.png)
 
 Cette approche présente plusieurs avantages :
 - Un même ordinateur peut exécuter différents programmes.

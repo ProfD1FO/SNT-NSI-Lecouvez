@@ -28,3 +28,4 @@ Attention, les cours présents sur ce site ne sont qu'un résumé et ne remplace
 
 - [Chapitre 3 - Les séquences](3-sequences/index.md)
 
+- [Chapitre 4 - Architecture d'un ordinateur](4-architecture_materielle/index.md)
