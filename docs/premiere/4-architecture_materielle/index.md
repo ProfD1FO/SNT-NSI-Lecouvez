@@ -17,3 +17,15 @@ Nos machines sont en permanence en train d'exécuter des programmes et de manipu
 ### Cours
 
 - [Cours 1 — L'architecture de Von Neumann](01-von_neumann.md)
+
+- [Cours 2 — Exécution des instructions par le processeur](03-cours_assembleur.md)
+
+- [Cours 3 — Architecture multicoeurs](05-multiproc.md)
+
+### Exercices
+
+- [Exercices 1 — L'architecture de Von Neumann](02-exos_archi.md)
+
+- [Exercices 2 — Exécution des instructions par le processeur](04-exos_assembleur.md)
+
+- [Exercices 3 — L'architecture de Von Neumann](06-exos_multiproc.md)

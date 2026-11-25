@@ -1,4 +1,4 @@
-# Exercices – Architecture de von Neumann
+# Exercices 1 – Architecture de von Neumann
 
 ## Exercice 1 – Un ordinateur au travail
 

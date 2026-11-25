@@ -36,7 +36,9 @@ Les données sont initialement stockées aux adresses suivantes :
 | 14 | 0 |
 
 **1.** À quelles variables Python correspondent les adresses 10 à 14 (sauf 13)?
+
 **2.** Deviner les valeurs qui seront finalement stockées aux adresses 12 et 14 après exécution du programme.
+
 **3.** Compléter le tableau suivant pour suivre l'évolution de l'accumulateur et des données en mémoire.
 
 | Instruction exécutée | ACC | Mémoire[12] | Mémoire[14] |
@@ -51,6 +53,7 @@ Les données sont initialement stockées aux adresses suivantes :
 | `HALT` | | | |
 
 **4.** Une instruction machine correspond-elle nécessairement à une ligne du programme Python ? Justifier à partir de cet exemple.
+
 **5.** On remplace la valeur située à l'adresse 11 par 8, sans modifier le programme. Quel sera le nouveau contenu de l'adresse 14 ? Expliquer.
 
 ### Exercice 2 – Suivre l'exécution d'un programme
@@ -72,6 +75,7 @@ On considère le programme suivant :
 Le processeur démarre avec un CO égal à 0 et un ACC vide.
 
 **1.** Prévoir le résultat final qui sera stocké à l'adresse 11.
+
 **2.** Compléter le tableau suivant. Les valeurs indiquées correspondent à l'état du processeur **après l'exécution complète de chaque instruction**.
 
 | Instruction exécutée | CO | RI | ACC | Mémoire[11] |
@@ -84,7 +88,9 @@ Le processeur démarre avec un CO égal à 0 et un ACC vide.
 | `HALT` | | | | |
 
 **3.** Lors de l'exécution de `LOAD 8`, le processeur accède deux fois à la mémoire. Expliquer à quoi correspondent ces deux accès.
+
 **4.** Un élève affirme qu'après `SUB 10`, la valeur 5 est déjà stockée à l'adresse 11. Expliquer son erreur.
+
 **5.** On supprime l'instruction `STORE 11`. Le calcul est-il toujours réalisé ? Le résultat est-il conservé en mémoire à l'adresse 11 ? Justifier.
 
 ### Exercice 3 – Modifier le déroulement d'un programme
@@ -106,6 +112,7 @@ On considère le programme suivant :
 | 11 | 3 |
 
 **1.** Avant de dérouler le programme, prévoir le contenu final de l'adresse 10.
+
 **2.** Compléter le tableau suivant en indiquant les instructions réellement exécutées. Le CO correspond à sa valeur après l'exécution complète de l'instruction.
 
 | Instruction exécutée | CO | ACC | Mémoire[10] |
@@ -118,7 +125,9 @@ On considère le programme suivant :
 | | | | |
 
 **3.** Quelles instructions du programme ne sont jamais exécutées ?
+
 **4.** Que se passerait-il si l'instruction `JUMP 4` était supprimée ? Prévoir le nouveau résultat final.
+
 **5.** Proposer une modification permettant d'obtenir ce nouveau résultat, puis justifier votre réponse.
 
 ---
@@ -161,7 +170,9 @@ On dispose des variables suivantes :
 | W | 0 |
 
 **1.** Écrire un programme VNSim permettant d'effectuer ce calcul et d'enregistrer le résultat dans `W`.
+
 **2.** Avant de lancer le programme, prévoir le résultat final.
+
 **3.** Exécuter le programme pas à pas (mettez pour cela la vitesse à 1500 ms). Après chaque instruction, relever la valeur de l'accumulateur et celle de `W`.
 
 | Instruction exécutée | ACC | W |
@@ -174,6 +185,7 @@ On dispose des variables suivantes :
 | Cinquième instruction | | |
 
 **4.** Recommencer en remplaçant `Y = 7` par `Y = 12`, sans modifier le programme. Quel est le nouveau résultat ?
+
 **5.** Expliquer pourquoi le programme peut effectuer un calcul différent alors que ses instructions n'ont pas changé.
 
 ### Exercice 5 – Déboguer un programme
@@ -200,6 +212,7 @@ Les variables sont initialisées ainsi :
 | W | 0 |
 
 **1.** Sans lancer le programme, prévoir la valeur finale de l'accumulateur et celle de `W`.
+
 **2.** Exécuter le programme pas à pas et compléter le tableau.
 
 | Instruction exécutée | ACC | W |
@@ -212,6 +225,9 @@ Les variables sont initialisées ainsi :
 | `HALT` | | |
 
 **3.** Le programme réalise-t-il correctement le calcul demandé ? Expliquer.
+
 **4.** Corriger le programme pour que le résultat soit correctement enregistré.
+
 **5.** Exécuter le programme corrigé et vérifier son fonctionnement.
+
 **6.** Dans le programme initial, pourquoi l'accumulateur contient-il une valeur différente de celle enregistrée dans `W` à la fin de l'exécution ?
